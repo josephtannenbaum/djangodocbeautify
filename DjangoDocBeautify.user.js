@@ -37,7 +37,7 @@ $(document).ready(function() {
     
     // -- Search boxes autocomplete --
     $('#id_sidebar_search_q,#id_sidebar_search_q_2').autocomplete({
-        source: autocomplete_16,
+        source: autocomplete_data,
         select: function(e, ui) {
             e.preventDefault();
         	window.location = 'https://docs.djangoproject.com/en/'+DJANGO_VERSION+'/'+ui.item.value;
