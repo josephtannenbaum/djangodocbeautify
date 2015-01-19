@@ -18,12 +18,13 @@ RELEASE_NO            = '9';	// This relates to the version
 DJANGODOC_SEARCH_URL  = "https://docs.djangoproject.com/search/?release="+RELEASE_NO+"&q=";
 DJANGODOC_MODULES_URL = "https://docs.djangoproject.com/en/"+DJANGO_VERSION+"/_modules/";
 PYTHON_SEARCH_URL     = "https://docs.python.org/2/search.html?q=";
+JQUERY_UI_THEME       = "smoothness"
 CODE_TEXTAREA_ENABLED = true    // some folks might not like this feature
 
 stickyrecalc = function(){$(document.body).trigger("sticky_kit:recalc");};
 
 // Load external jQuery UI CSS
-$("head").append('<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.min.css" rel="stylesheet" type="text/css">');
+$("head").append('<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/'+JQUERY_UI_THEME+'/jquery-ui.min.css" rel="stylesheet" type="text/css">');
 
 // -- MAIN --
 $(document).ready(function() {  
